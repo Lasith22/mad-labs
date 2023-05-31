@@ -186,7 +186,12 @@ const MainSection = () => {
       {/* 3rd section */}
       <section>
         <div className="flex flex-col bg-white justify-center items-center mt-20 ">
-          <h1 className=" text-10xl font-bold  ">Trending Courses</h1>
+          <div className="">
+            <h1 className=" text-[30px] lg:text-[50px] font-bold  ">
+              Trending Courses
+            </h1>
+          </div>
+
           <p className="mx-80">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Perferendis, quod voluptatibus? Ut eos earum accusantium ducimus
@@ -340,7 +345,10 @@ const MainSection = () => {
               <BigIcon className="  absolute -bottom-12 left-9" />
             </div>
             <div className="flex flex-col       ">
-              <h1 className="mt-20  text-10xl font-bold"> For Professionals</h1>
+              <h1 className="mt-20 text-[40px]  lg:text-[50px] font-bold">
+                {' '}
+                For Professionals
+              </h1>
               {/* <img src={BigIcon} /> */}
 
               <p className="text-18 font-inter text-darkdray mt-10">
@@ -363,8 +371,8 @@ const MainSection = () => {
                 <div className="bg-white p-2 rounded-lg mb-10 w-[316px]">
                   <img src={Rectangle4} alt="" />
                   <div className="flex flex-col ml-5 gap-3 ">
-                    <div className="bg-bgYellow  p-1 flex w-1/2 rounded-lg justify-center items-center   ">
-                      <h1 className="text-yellow2 font-semibold text-xl font-custom  ">
+                    <div className="bg-bgYellow  p-1 flex w-1/2 rounded-lg justify-center items-center mt-2   ">
+                      <h1 className="text-yellow2 font-semibold text-xl font-custom   ">
                         PROFFESSIONAL
                       </h1>
                     </div>
