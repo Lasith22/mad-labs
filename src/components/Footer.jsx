@@ -46,7 +46,7 @@ import LinkedIn from '../icons/ LinkedIn.svg';
 import Twitter from '../icons/ Twitter.svg';
 const Footer = () => {
   return (
-    <div>
+    <div className="">
       <div className="flex flex-col justify-center items-center mt-40   ">
         <div className="bg-yellowRecatangle p-10 flex flex-col w-full  max-w-[1051px]   justify-center items-center rounded-lg   relative   ">
           {/* circles */}

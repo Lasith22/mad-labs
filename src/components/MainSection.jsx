@@ -78,7 +78,7 @@ const MainSection = () => {
           </div>
 
           {/* Big Man image */}
-          <div className=" flex justify-center  mt-10  lg:mt-0  ">
+          <div className=" flex justify-center  mt-10  lg:mt-0    ">
             <div className=" relative        ">
               <img
                 src={OrangeRec}
@@ -140,7 +140,7 @@ const MainSection = () => {
         </div>
       </section>
       {/* 2nd section */}
-      <section>
+      <section className="  ">
         <div className="  bg-[#597B65]     ">
           <div class=" flex flex-col lg:flex-row  mx-auto  text-white justify-around  items-center  h-full lg:h-[282px]       py-10  ">
             <div className="flex    items-center  gap-10 lg:gap-5 py-7 lg:py-0 ">
