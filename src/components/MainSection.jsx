@@ -46,6 +46,7 @@ import LinkedIn from '../icons/ LinkedIn.svg';
 import Twitter from '../icons/ Twitter.svg';
 import SmallCircle from '../icons/ Small circle.svg';
 import Star22 from '../icons/ small Star.svg';
+import SmallMan4 from '../icons/ SmallMane 1st section.svg';
 
 const MainSection = () => {
   return (
@@ -84,6 +85,7 @@ const MainSection = () => {
                 className="  absolute right-40 -bottom-0    "
                 alt=""
               />
+
               <img
                 src={BigMan}
                 height={763}
@@ -91,6 +93,7 @@ const MainSection = () => {
                 className=" absolute right-30 -bottom-0 right-1/4   "
                 alt=""
               />
+
               <div className="  absolute -right-40 -top-8 ">
                 <img src={CatLegs} alt="" />
               </div>
@@ -99,17 +102,47 @@ const MainSection = () => {
               </div>
               <img src={YellowRec} className="   " alt="" />
             </div>
+          </div>
 
-            <div className=" flex justify-center items-end absolute         ">
-              <img src={DockerSvg} alt="" className="   " />
+          <div className="   mb-80   absolute ml-80   hidden lg:block     ">
+            <img src={AngularIcon} alt="" className=" ml-80  mb-60  " />
+          </div>
+          <div className="     absolute ml-80   hidden lg:block     ">
+            <img src={Star22} alt="" className=" ml-80    " />
+          </div>
+          {/* rectange with small rount image */}
+          <div className="    relative   z-40  hidden lg:block   ">
+            <div className="bg-white bg-opacity-80 p-3 flex flex-row w-boxWidth  h-[79px] justify-start items-start rounded-md  absolute top-40 right-80 gap-5    ">
+              <div>
+                <img src={SmallMan4} className="      " alt="" />
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <div className=" bg-indigo-900 bg-opacity-10 p-1 flex   rounded-3xl justify-center items-center mt-2   ">
+                  <h1 className="text-[#3734A9] font-semibold text-xl font-manrope  ">
+                    + $28,900
+                  </h1>
+                </div>
+
+                <h1 className="text-[#757095] font-inter text-14 font-semibold">
+                  Recieved From Derek
+                </h1>
+              </div>
             </div>
+          </div>
+          <div className="         hidden lg:block     ">
+            <img
+              src={DockerSvg}
+              alt=""
+              className=" absolute mt-20 ml-12     "
+            />
           </div>
         </div>
       </section>
       {/* 2nd section */}
       <section>
-        <div className="  bg-madlabsGreen ">
-          <div class=" flex flex-col lg:flex-row    mx-auto    text-white justify-around  items-center  h-full lg:h-[282px]       py-10  ">
+        <div className="  bg-[#597B65]     ">
+          <div class=" flex flex-col lg:flex-row  mx-auto  text-white justify-around  items-center  h-full lg:h-[282px]       py-10  ">
             <div className="flex    items-center  gap-10 lg:gap-5 py-7 lg:py-0 ">
               <img src={ComputerIcon} height={60} width={60} alt="" />
               <div className="flex flex-col   ">
