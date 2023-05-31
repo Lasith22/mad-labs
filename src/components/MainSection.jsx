@@ -35,6 +35,7 @@ import AngularIcon from '../icons/Group 1000000816.svg';
 import Graph from '../icons/ Graph.svg';
 import YellowRec from '../icons/Yellow Rectangle 4376.svg';
 import OrangeRec from '../icons/ Orange Rectangle 4375.svg';
+import { ReactComponent as BigIcon2 } from '../icons/Group 5thsection.svg';
 // import { ReactComponent as Bag } from '../icons/VectorBag.svg';
 // import Footer from '../icons/Vector footer.svg';
 import PurplePhone from '../icons/Group purplePhone.svg';
@@ -43,95 +44,73 @@ import MaDLabsLogo from '../icons/ MadLabsLogo.svg';
 import Instagram from '../icons/ Insta.svg';
 import LinkedIn from '../icons/ LinkedIn.svg';
 import Twitter from '../icons/ Twitter.svg';
+import SmallCircle from '../icons/ Small circle.svg';
+import Star22 from '../icons/ small Star.svg';
 
-const MainComp = () => {
+const MainSection = () => {
   return (
     <div>
-      <div>
-        {/* for first part */}
-        <div className=" w-[screen]   ">
-          <div className="flex justify-start items-center ml-20 gap-20  mt-5 px-4 py-5  ">
-            <div className="     ">
-              <img src={MainLogo} alt="" />
-            </div>
+      <section className="bg-white pt-20">
+        <div className="flex flex-col items-center px-4 mx-auto lg:flex-row">
+          <div className="flex flex-col items-center mt-6 lg:items-start lg:w-1/2 xl:mt-0 mx-14">
+            <h1 className=" text-[40px]  lg:text-[60px] font-manrope font-bold    ">
+              I help you to <br /> build your skills
+            </h1>
+            <p className="xl:text-18 font-manrope text-textColorBlack block max-w-2xl mt-6 text-16 text-cente lg:text-left xl:text-left">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptate quae ver esse fugiat corporis enim magnam maxime amet.
+            </p>
 
-            <div className="flex items-center gap-10    ">
-              <h1>Courses</h1>
-              <h1>Testimonials</h1>
-              <h1>FAQ's</h1>
-              <h1> Help</h1>
-              <h1>About Me</h1>
-            </div>
-          </div>
-          <div className="flex justify-start ml-60 mt-10  ">
-            <img src={Circle1} alt="" className="absolute" />
-          </div>
-          <div className="flex justify-center     mt-10   ">
-            <img src={AngularIcon} alt="" className="absolute" />
-          </div>
-
-          {/* after logo section */}
-          <div className="flex justify-between    gap-10 -mt-20  mx-20   ">
-            <div className="flex flex-col justify-center items-start gap-5">
-              <h1 className="text-60 font-manrope font-bold">
-                I help you to <br /> build your skills
-              </h1>
-              <p className="text-18 font-manrope text-textColorBlack">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptate quae ver esse fugiat corporis <br /> enim magnam
-                maxime amet.
-              </p>
-
-              <div className="flex justify-between items-center gap-8">
-                <div className="  ">
-                  <button class="bg-buttonOrange   text-white   p-2  text-16 font-inter px-6  rounded">
-                    Explore Courses
-                  </button>
-                </div>
+            <div className="flex justify-between items-center   mt-6 ">
+              <div className="  ">
+                <button class="bg-[#E16F38]  text-white   p-2  text-16 font-inter px-6  rounded">
+                  Explore Courses
+                </button>
+              </div>
+              <div className="flex justify-betweenitems-center ml-8 gap-3">
                 <img src={VideoIcon} alt="" />
                 <h1 className="text-buttonOrange text-16 font-inter font-semibold">
                   Watch video
                 </h1>
               </div>
             </div>
+          </div>
 
-            {/* big man part */}
-
-            <div className="">
-              <div className=" absolute">
+          {/* Big Man image */}
+          <div className=" flex justify-center  mt-10  lg:mt-0  ">
+            <div className=" relative        ">
+              <img
+                src={OrangeRec}
+                className="  absolute right-40 -bottom-0    "
+                alt=""
+              />
+              <img
+                src={BigMan}
+                height={763}
+                width={430}
+                className=" absolute right-30 -bottom-0 right-1/4   "
+                alt=""
+              />
+              <div className="  absolute -right-40 -top-8 ">
                 <img src={CatLegs} alt="" />
               </div>
-
-              <div className=" relative        ">
-                <img
-                  src={OrangeRec}
-                  className="  absolute right-40 -bottom-0    "
-                  alt=""
-                />
-                <img
-                  src={BigMan}
-                  height={763}
-                  width={430}
-                  className=" absolute right-30 -bottom-0 right-1/4   "
-                  alt=""
-                />
-                <div className="flex justify-start  absolute mt-20 -right-60  ">
-                  <img src={Graph} alt="" />
-                </div>
-                <img src={YellowRec} className="   " alt="" />
+              <div className="flex justify-start  absolute mt-20 -right-60  ">
+                <img src={Graph} alt="" />
               </div>
-              <div className=" flex justify-center items-end     relative   ">
-                <img src={DockerSvg} alt="" className=" absolute left-80 " />
-              </div>
+              <img src={YellowRec} className="   " alt="" />
             </div>
 
-            <div></div>
+            <div className=" flex justify-center items-end absolute         ">
+              <img src={DockerSvg} alt="" className="   " />
+            </div>
           </div>
         </div>
-        {/* for second part */}
-        <div className="w-full bg-madlabsGreen">
-          <div class=" flex    mx-auto    text-white justify-around  h-[282px]        py-10  ">
-            <div className="flex   justify-evenly items-center gap-5">
+      </section>
+      {/* 2nd section */}
+      <section>
+        <div className="  bg-madlabsGreen ">
+          <div class=" flex flex-col lg:flex-row    mx-auto    text-white justify-around  items-center  h-full lg:h-[282px]       py-10  ">
+            <div className="flex    items-center  gap-10 lg:gap-5 py-7 lg:py-0 ">
               <img src={ComputerIcon} height={60} width={60} alt="" />
               <div className="flex flex-col   ">
                 <h1 className="text-50 font-bold">12</h1>
@@ -141,7 +120,7 @@ const MainComp = () => {
               </div>
             </div>
 
-            <div className="flex justify-evenly items-center gap-5">
+            <div className="flex   items-center gap-10 lg:gap-5 py-7 lg:py-0">
               <img src={Clock} height={60} width={60} alt="" />
               <div className="flex flex-col   ">
                 <h1 className=" text-50 font-bold">30 +</h1>
@@ -151,7 +130,7 @@ const MainComp = () => {
               </div>
             </div>
 
-            <div className="flex justify-evenly items-center gap-5">
+            <div className="flex  items-center  gap-10 lg:gap-5 py-7 lg:py-0">
               <img src={Graduate} height={60} width={60} alt="" />
               <div className="flex flex-col   ">
                 <h1 className=" text-50 font-bold">34</h1>
@@ -161,7 +140,7 @@ const MainComp = () => {
               </div>
             </div>
 
-            <div className="flex justify-evenly items-center gap-5">
+            <div className="flex  items-center  gap-10 lg:gap-5 py-7 lg:py-0">
               <img src={PositiveR} height={60} width={60} alt="" />
               <div className="flex flex-col   ">
                 <h1 className=" text-50 font-bold">200 +</h1>
@@ -170,19 +149,19 @@ const MainComp = () => {
             </div>
           </div>
         </div>
-        {/* 3rd Part */}
+      </section>
+      {/* 3rd section */}
+      <section>
         <div className="flex flex-col bg-white justify-center items-center mt-20 ">
           <h1 className=" text-10xl font-bold  ">Trending Courses</h1>
           <p className="mx-80">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Perferendis, quod voluptatibus? Ut eos earum accusantium ducimus
-            molestiae, reprehenderit vero illum odit explicabo quam eveniet ipsa
-            consequuntur eius voluptatum culpa dolores?
           </p>
 
-          <div className="flex justify-evenly items-center gap-10 mt-10 ">
+          <div className="flex flex-col  lg:flex-row justify-evenly items-center gap-10 mt-10   ">
             {/* 1st crd */}
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 ">
               <img src={Rectangle1} alt="" />
               <div className="flex flex-col ml-5 gap-3 ">
                 <div className="bg-bgYellow  p-1 flex w-1/3 rounded-lg justify-center items-center   ">
@@ -318,12 +297,13 @@ const MainComp = () => {
             </div>
           </div>
         </div>
-
-        {/* 4rth Section */}
+      </section>
+      {/* 4rth section */}
+      <section>
         <div className="w-[screen]   bg-bgDarkYelloyw   mt-20  p-2 ">
-          <div className="flex    m-20 gap-4 justify-around   ">
+          <div className="flex flex-col lg:flex-row    m-20 gap-4 justify-around   ">
             {/* background svg image */}
-            <div className=" inline-block align-middle    relative      ">
+            <div className="  align-middle    relative  hidden lg:block    ">
               <BigIcon className="  absolute -bottom-12 left-9" />
             </div>
             <div className="flex flex-col       ">
@@ -343,10 +323,11 @@ const MainComp = () => {
               </div>
             </div>
 
-            <div className="flex justify-between     gap-6">
+            <div className="flex flex-col md:flex-row justify-between items-center     gap-6">
               {/* 1st crd  */}
-              <div className="bg-white p-2 rounded-lg mb-10">
-                <div className="flex flex-col gap-5">
+
+              <div className="flex flex-col gap-5">
+                <div className="bg-white p-2 rounded-lg mb-10 w-[316px]">
                   <img src={Rectangle4} alt="" />
                   <div className="flex flex-col ml-5 gap-3 ">
                     <div className="bg-bgYellow  p-1 flex w-1/2 rounded-lg justify-center items-center   ">
@@ -385,9 +366,9 @@ const MainComp = () => {
                 </div>
               </div>
               {/* 2nd crd */}
-              <div className="mt-10">
+              <div className="mt-0    lg:mt-10  ">
                 <div className="flex flex-col gap-5  ">
-                  <div className="bg-white p-2 rounded-lg">
+                  <div className="bg-white p-2 w-[316px] rounded-lg">
                     <img src={Rectangle5} alt="" />
                     <div className="flex flex-col ml-5 gap-3 ">
                       <div className="bg-bgYellow  p-1 flex w-1/2 rounded-lg justify-center items-center mt-2   ">
@@ -412,10 +393,9 @@ const MainComp = () => {
                         </div>
                         <h1> (120)</h1>
                       </div>
-                      {/* border bottom */}
+
                       <div className="flex border-b"></div>
 
-                      {/* prices */}
                       <div className=" flex justify-end  ">
                         <div className="flex justify-between items-center gap-3 ">
                           <img src={Session} height={18} width={17} alt="" />
@@ -429,13 +409,15 @@ const MainComp = () => {
             </div>
           </div>
         </div>
-
-        {/* 5th section */}
-        <div className="bg-bgPurple1 justify-evenly items-center   flex p-2">
+      </section>
+      {/* 5th  */}
+      <section>
+        <div className="bg-bgPurple1 justify-evenly items-center   flex flex-col-reverse lg:flex-row p-2">
           {/* crd 1 */}
           <div className="bg-white p-2 m-5 rounded-lg my-20">
             <div className="flex flex-col gap-5">
               <img src={Rectangle6} alt="" />
+
               <div className="flex flex-col ml-5 gap-3 ">
                 <div className="bg-bgPurple  p-1 flex w-1/2 rounded-lg justify-center items-center   ">
                   <h1 className="text-purple2 font-semibold text-xl font-custom  ">
@@ -472,12 +454,11 @@ const MainComp = () => {
               </div>
             </div>
           </div>
-
-          <div className="  ">
-            {/* background svg image */}
-            {/* <div className=" inline-block     relative        ">
-              <BigIcon2 className="  absolute   bottom-1 top-1 left-9   " />
-            </div> */}
+          {/* background svg image */}
+          <div className="     relative         -top-80 -left-9 hidden lg:block  ">
+            <BigIcon2 className="  absolute   top-0   " />
+          </div>
+          <div className=" mt-20 lg:mt-0  ">
             <h1 className="  text-50 font-manrope font-extrabold">
               Career Centred
             </h1>
@@ -495,11 +476,13 @@ const MainComp = () => {
             </div>
           </div>
         </div>
-        {/* 6th section */}
+      </section>
+      {/* 6th */}
+      <section>
         <div className=" bg-bgorange   p-2 ">
-          <div className="flex    m-20 gap-4 justify-around ">
+          <div className="flex flex-col  lg:flex-row    m-20 gap-4 justify-around ">
             {/* background svg image */}
-            <div className=" inline-block align-middle    relative     ">
+            <div className="  align-middle    relative   hidden lg:block     ">
               <BigIcon3 className="  absolute -bottom-20 -left-20" />
             </div>
             <div className="flex flex-col">
@@ -512,6 +495,7 @@ const MainComp = () => {
                 similique. Eius quae mollitia consectetur, molestias
                 reprehenderit laudantium, a rerum ad aut velit sit?
               </p>
+
               <div className="mt-10  ">
                 <button class="bg-buttonOrange   text-white   p-2  text-16 font-inter px-6 py-3  rounded">
                   View Courses
@@ -519,7 +503,7 @@ const MainComp = () => {
               </div>
             </div>
 
-            <div className="flex justify-between     gap-6">
+            <div className=" flex flex-col md:flex-row justify-between  items-center    gap-6">
               {/* 1st crd  */}
               <div className="bg-white p-2 rounded-lg mb-10 h-[458px]">
                 <div className="flex flex-col gap-5">
@@ -561,7 +545,7 @@ const MainComp = () => {
                 </div>
               </div>
               {/* 2nd crd */}
-              <div className="mt-10">
+              <div className=" mt-0    lg:mt-10 ">
                 <div className="flex flex-col gap-5  ">
                   <div className="bg-white p-2 rounded-lg h-[458px]">
                     <img src={Rectangle8} alt="" />
@@ -610,241 +594,183 @@ const MainComp = () => {
             </div>
           </div>
         </div>
+      </section>
+      {/* 7th  */}
+      <section>
+        <div className="my-10">
+          <div className="flex justify-between items-center  mx-20 flex-col-reverse lg:flex-row ">
+            <div className=" relative mx-6 mt-4 lg:mt-10  ">
+              <img src={Rectangle7th} className="   " alt="" />
 
-        {/* 7th section */}
-        <div className="bg-white    ">
-          <div>
-            <div className="flex justify-between items-center  mx-20 ">
-              <div className=" relative mx-6   ">
-                <img src={Rectangle7th} className="   " alt="" />
-                <img src={Man} className="absolute top-1 left-20 " alt="" />
-              </div>
-              <div className="flex flex-col">
-                <h1 className="mt-20  text-10xl font-bold">
-                  {' '}
-                  No more hassle, <br />{' '}
-                  <span className="flex ">Pay as you go </span>
-                </h1>
-                {/* <img src={BigIcon} /> */}
+              <img src={Man} className="absolute top-1 left-20 " alt="" />
+            </div>
 
-                <p className="text-18 font-inter text-darkdray mt-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam asperiores modi <br /> beatae facere eum! Deleniti,
-                  rerum similique. Eius quae mollitia consectetur, molestias
-                  reprehenderit <br /> laudantium, a rerum ad aut velit sit?
-                </p>
-                <p className="text-18 font-inter text-darkdray mt-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam asperiores modi <br /> beatae facere eum! Deleniti,
-                  rerum similique. Eius quae mollitia consectetur, molestias
-                  reprehenderit laudantium, <br /> a rerum ad aut velit sit?
-                </p>
+            <div className="flex flex-col">
+              <div className="relative   ">
+                <img
+                  src={Star22}
+                  className="  absolute  left-80 top-0"
+                  alt=""
+                />
               </div>
+              <h1 className="mt-20  text-10xl font-bold">
+                {' '}
+                No more hassle, <br />{' '}
+                <span className="flex ">Pay as you go </span>
+              </h1>
+              <div className="relative right-40  bottom-60 ">
+                <img src={SmallCircle} className="  absolute " alt="" />
+              </div>
+              {/* <img src={BigIcon} /> */}
+
+              <p className="text-18 font-inter text-darkdray mt-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                asperiores modi <br /> beatae facere eum! Deleniti, rerum
+                similique. Eius quae mollitia consectetur, molestias
+                reprehenderit <br /> laudantium, a rerum ad aut velit sit?
+              </p>
+              <p className="text-18 font-inter text-darkdray mt-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                asperiores modi <br /> beatae facere eum! Deleniti, rerum
+                similique. Eius quae mollitia consectetur, molestias
+                reprehenderit laudantium, <br /> a rerum ad aut velit sit?
+              </p>
             </div>
           </div>
-
-          {/* 8th section */}
-          <div className="bg-bgDark">
-            <div className="flex justify-center items-center m-10 ">
-              <div className="flex flex-col mr-20">
-                <div className="">
-                  <h1 className="mt-20  text-10xl font-bold  ">
-                    Real Stories from <br />{' '}
-                    <span className="flex "> Real Customers </span>
-                  </h1>
-                  <h1>Get nspired by these stories.</h1>
-                </div>
-                {/* 1st crd */}
-                <div className="bg-white  max-w-sm rounded overflow-hidden shadow-lg  p-4 flex flex-col justify-end items-start   mt-5 ml-10   ">
-                  <img src={SmallMan1} width={40} height={40} alt="" />
-                  <img className="mt-2" src={Comma} alt="" />
-                  <div className="flex flex-col   ml-9 text-smallText font-inter text-18 font-normal">
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Dolorem laborum eum illum molestiae labore cumque atque
-                      obcaecati assumenda, hic nisi reiciendis consectetur cum
-                      cupiditate.
-                    </p>
-                    <h1 className="  font-semibold mt-2">Floyd Miles</h1>
-                    <h1 className="text-darkText text-14">
-                      Vise President GoPro
-                    </h1>
-                  </div>
-                </div>
+        </div>
+      </section>
+      {/* 8th  */}
+      <section>
+        <div className="bg-bgDark">
+          <div className="flex justify-center items-center m-10  flex-col lg:flex-row">
+            <div className="flex flex-col mr-20">
+              <div className=" items-center justify-center lg:items-start   xl:mt-0">
+                <h1 className="mt-20  text-10xl font-bold  ">
+                  Real Stories from <br />{' '}
+                  <span className="flex "> Real Customers </span>
+                </h1>
+                <h1>Get nspired by these stories.</h1>
               </div>
-              {/* 2nd crd */}
-              <div className="flex flex-col gap-5 mt-40 ml-10">
-                <div className="bg-white  max-w-sm rounded overflow-hidden shadow-lg  p-4 flex flex-col justify-end items-start   mt-5   ">
-                  <img src={SmallMan2} width={40} height={40} alt="" />
-                  <img className="mt-2" src={Comma} alt="" />
-                  <div className="flex flex-col   ml-9 text-smallText font-inter text-18 font-normal">
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Dolorem laborum eum illum molestiae labore cumque atque
-                      obcaecati assumenda, hic nisi reiciendis consectetur cum
-                      cupiditate. lo
-                    </p>
-                    <h1 className="  font-semibold mt-2">Floyd Miles</h1>
-                    <h1 className="text-darkText text-14">
-                      Vise President GoPro
-                    </h1>
-                  </div>
-                </div>
-                <div className="bg-white  max-w-sm rounded overflow-hidden shadow-lg  p-4 flex flex-col justify-end items-start  my-10   ">
-                  <img src={SmallMan3} width={40} height={40} alt="" />
-                  <img className="mt-2" src={Comma} alt="" />
-                  <div className="flex flex-col   ml-9 text-smallText font-inter text-18 font-normal">
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <h1 className="  font-semibold mt-2">Floyd Miles</h1>
-                    <h1 className="text-darkText text-14">
-                      Vise President GoPro
-                    </h1>
-                  </div>
+              {/* 1st crd */}
+              <div className="bg-white  max-w-sm rounded overflow-hidden shadow-lg  p-4 flex flex-col justify-end items-start   mt-5 ml-10   ">
+                <img src={SmallMan1} width={40} height={40} alt="" />
+                <img className="mt-2" src={Comma} alt="" />
+                <div className="flex flex-col   ml-9 text-smallText font-inter text-18 font-normal">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorem laborum eum illum molestiae labore cumque atque
+                    obcaecati assumenda, hic nisi reiciendis consectetur cum
+                    cupiditate.
+                  </p>
+                  <h1 className="  font-semibold mt-2">Floyd Miles</h1>
+                  <h1 className="text-darkText text-14">
+                    Vise President GoPro
+                  </h1>
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* 9th section */}
-          <div className="mb-20 flex flex-col gap-10">
-            {/* for 1st two sections */}
-            <div className="flex   mx-20">
-              {/* Any quiations sections */}
-              <div className="flex flex-col">
-                <h1 className="text-10xl font-bold font-manrope  ">
-                  Any quations? <br /> We got you.
-                </h1>
-                <p className="text-18 font-inter text-darkdray mt-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam asperiores modi <br /> beatae facere eum! Deleniti,
-                  rerum similique. Eius quae mollitia consectetur, molestias
-                  reprehenderit <br /> laudantium, a rerum ad aut velit sit?
-                </p>
-              </div>
-              {/* how this work section */}
-              <div className="flex flex-col ml-20">
-                <div className="flex items-stretch justify-between  gap-20  ">
-                  <h1 className="text-20 font-semibold font-manrope">
-                    How this work?
+            {/* 2nd crd */}
+            <div className="flex flex-col gap-5 mt-10 lg:mt-40  mr-10  lg:ml-10   ">
+              <div className="bg-white  max-w-sm rounded overflow-hidden shadow-lg  p-4 flex flex-col justify-end items-start   mt-5   ">
+                <img src={SmallMan2} width={40} height={40} alt="" />
+                <img className="mt-2" src={Comma} alt="" />
+                <div className="flex flex-col   ml-9 text-smallText font-inter text-18 font-normal">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorem laborum eum illum molestiae labore cumque atque
+                    obcaecati assumenda, hic nisi reiciendis consectetur cum
+                    cupiditate. lo
+                  </p>
+                  <h1 className="  font-semibold mt-2">Floyd Miles</h1>
+                  <h1 className="text-darkText text-14">
+                    Vise President GoPro
                   </h1>
-
-                  <img src={Minus} alt="" />
-                </div>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem provident suscipit nobis. <br /> Obcaecati, sapiente?
-                  Optio voluptas harum dolores quae aut q labore officia?
-                </p>
-                {/* border bottom */}
-                <div className="flex border-b my-10"></div>
-
-                <div className="flex items-stretch justify-between  gap-20  ">
-                  <h1 className="text-20 font-semibold font-manrope">
-                    Are there any additional Fee?
-                  </h1>
-
-                  <img src={Plus} alt="" />
-                </div>
-                {/* border bottom */}
-                <div className="flex border-b my-10"></div>
-
-                <div className="flex items-stretch justify-between  gap-20  ">
-                  <h1 className="text-20 font-semibold font-manrope">
-                    How Can I get the course?
-                  </h1>
-
-                  <img src={Plus} alt="" />
-                </div>
-                {/* border bottom */}
-                <div className="flex border-b my-10"></div>
-
-                <div className="flex items-stretch justify-between  gap-20  ">
-                  <h1 className="text-20 font-semibold font-manrope">
-                    What materials do you offer and other not?
-                  </h1>
-
-                  <img src={Plus} alt="" />
-                </div>
-                {/* border bottom */}
-                <div className="flex border-b my-10"></div>
-              </div>
-            </div>
-            {/* yellow rectangle section */}
-            <div className="flex flex-col justify-center items-center mt-10 ">
-              <div className="bg-yellowRecatangle p-10 flex flex-col w-full  max-w-[1051px] h-[315px] justify-center items-center rounded-lg absolute z-20 -mt-80  ">
-                {/* circles */}
-                <div className="absolute bottom-0 right-0 h-[179px] w-[179px] rounded-tl-full   bg-yellowsmallWhatsapp"></div>
-                <div className="absolute bottom-0 left-0 h-[155px] w-[155px] rounded-tr-full   bg-yellowsmallWhatsapp"></div>
-                <div className="  absolute top-10  left-60  h-[46px] w-[46px] rounded-full    bg-yellowsmallWhatsapp"></div>
-                <h1 className="text-40 font-manrope font-bold mx-20">
-                  Access this right service <br />{' '}
-                  <span className="ml-20">for you today!</span>
-                </h1>
-
-                {/* 2  whats app icons */}
-                <div className="flex justify-between gap-8 items-center my-10">
-                  <div className="bg-yellowsmallWhatsapp p-3 flex flex-col w-boxWidth  h-[79px] justify-start items-start rounded-md relative    ">
-                    <div className="absolute  -top-6 right-5">
-                      <img src={PurplePhone} alt="" />
-                    </div>
-                    <h1 className=" text-16 text-[#5B4508] font-bold font-manrope">
-                      Email
-                    </h1>
-                    <h1 className="f text-[#111827] font-inter text-14 font-normal   ">
-                      {' '}
-                      123Kanishka@gmail.com
-                    </h1>
-                  </div>
-                  {/* 2nd whats app box */}
-                  <div className="bg-yellowsmallWhatsapp p-3 flex flex-col w-boxWidth  h-[79px] justify-start items-start rounded-md relative">
-                    <div className="absolute  -top-6 right-5">
-                      <img src={GreenPhone} alt="" />
-                    </div>
-                    <h1 className=" text-16 text-[#5B4508] font-bold font-manrope">
-                      WhatsApp
-                    </h1>
-                    <h1 className="f text-[#111827] font-inter text-14 font-normal   ">
-                      {' '}
-                      +94 712 332 534
-                    </h1>
-                  </div>
                 </div>
               </div>
-              {/* green rec */}
-              <div className="bg-[#597B65] p-10 flex flex-col w-full  max-w-[1388.5px] h-[452.22px] justify-center items-center   relative    z-1 mt-20 gap-5     ">
-                <div className=" mt-6   ">
-                  <img src={MaDLabsLogo} className="mt-40" alt="" />
+              <div className="bg-white  max-w-sm rounded overflow-hidden shadow-lg  p-4 flex flex-col justify-end items-start  my-10   ">
+                <img src={SmallMan3} width={40} height={40} alt="" />
+                <img className="mt-2" src={Comma} alt="" />
+                <div className="flex flex-col   ml-9 text-smallText font-inter text-18 font-normal">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <h1 className="  font-semibold mt-2">Floyd Miles</h1>
+                  <h1 className="text-darkText text-14">
+                    Vise President GoPro
+                  </h1>
                 </div>
-
-                <p className="text-white font-normal font-inter text-14">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing <br />{' '}
-                  elit. Conse tem ad reiciendis. Corrupti facere ratione natus.
-                </p>
-
-                <div className="flex justify-between gap-6 text-white font-semibold font-inter text-14 ">
-                  <h1>About</h1>
-                  <h1>Terms</h1>
-                  <h1> Privacy</h1>
-                </div>
-                <div className="flex justify-between gap-6">
-                  <img src={LinkedIn} alt="" />
-                  <img src={Instagram} alt="" />
-                  <img src={Twitter} alt="" />
-                </div>
-                <h1 className="text-white font-normal font-inter text-14">
-                  ©2023 MadLabs. All rights reserved. Developed and designed by
-                  www.clounote.com
-                </h1>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      {/* 9th */}
+      <section>
+        <div className="flex flex-col lg:flex-row   mx-20">
+          {/* Any quiations sections */}
+          <div className="flex flex-col">
+            <h1 className="text-10xl font-bold font-manrope  ">
+              Any quations? <br /> We got you.
+            </h1>
+            <p className="text-18 font-inter text-darkdray mt-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              asperiores modi <br /> beatae facere eum! Deleniti, rerum
+              similique. Eius quae mollitia consectetur, molestias reprehenderit{' '}
+              <br /> laudantium, a rerum ad aut velit sit?
+            </p>
+          </div>
+          {/* how this work section */}
+          <div className="flex flex-col ml-0 lg:ml-20 mt-10 lg:mt-0">
+            <div className="flex items-stretch justify-between  gap-20  ">
+              <h1 className="text-20 font-semibold font-manrope">
+                How this work?
+              </h1>
+
+              <img src={Minus} alt="" />
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              provident suscipit nobis. <br /> Obcaecati, sapiente? Optio
+              voluptas harum dolores quae aut q labore officia?
+            </p>
+            {/* border bottom */}
+            <div className="flex border-b my-10"></div>
+
+            <div className="flex items-stretch justify-between  gap-20  ">
+              <h1 className="text-20 font-semibold font-manrope">
+                Are there any additional Fee?
+              </h1>
+
+              <img src={Plus} alt="" />
+            </div>
+            {/* border bottom */}
+            <div className="flex border-b my-10"></div>
+
+            <div className="flex items-stretch justify-between  gap-20  ">
+              <h1 className="text-20 font-semibold font-manrope">
+                How Can I get the course?
+              </h1>
+
+              <img src={Plus} alt="" />
+            </div>
+            {/* border bottom */}
+            <div className="flex border-b my-10"></div>
+
+            <div className="flex items-stretch justify-between  gap-20  ">
+              <h1 className="text-20 font-semibold font-manrope">
+                What materials do you offer and other not?
+              </h1>
+
+              <img src={Plus} alt="" />
+            </div>
+            {/* border bottom */}
+            <div className="flex border-b my-10"></div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
 
-export default MainComp;
+export default MainSection;

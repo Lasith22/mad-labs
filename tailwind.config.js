@@ -28,6 +28,7 @@ module.exports = {
         smallText: '#111827',
         darkText: '#6B7280',
         yellowRecatangle: '#F6C423',
+        yellowsmallWhatsapp: ' #F5DA8F',
       },
       fontSize: {
         xl: '12px',
@@ -57,6 +58,26 @@ module.exports = {
       },
       backgroundImage: {
         texture: `url('./icons/Group 1000000822@2x.png') `,
+      },
+      width: {
+        boxWidth: '290px',
+      },
+      screens: {
+        xs: '300px',
+        sm: '640px',
+        // => @media (min-width: 640px) { ... }
+
+        md: '768px',
+        // => @media (min-width: 768px) { ... }
+
+        lg: '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        xl: '1280px',
+        // => @media (min-width: 1280px) { ... }
+
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
       },
     },
   },
