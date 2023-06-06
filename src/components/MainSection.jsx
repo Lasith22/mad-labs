@@ -63,8 +63,8 @@ const MainSection = () => {
             </p>
 
             <div className="flex justify-between items-center   mt-6 ">
-              <div className="  ">
-                <button class="bg-[#E16F38]  text-white   p-2  text-16 font-inter px-6  rounded">
+              <div className="  w-fit ">
+                <button class="bg-[#E16F38]  text-white   p-2  text-16 font-inter px-6     rounded">
                   Explore Courses
                 </button>
               </div>
@@ -78,11 +78,11 @@ const MainSection = () => {
           </div>
 
           {/* Big Man image */}
-          <div className=" flex justify-center  mt-10  lg:mt-0    ">
-            <div className=" relative        ">
+          <div className=" flex justify-center  mt-10  lg:mt-0  w-1/2 md:max-w-fit    ">
+            <div className=" relative   left-10     ">
               <img
                 src={OrangeRec}
-                className="  absolute right-40 -bottom-0    "
+                className="  absolute right-20 sm:right-40 -bottom-0    "
                 alt=""
               />
 
@@ -97,8 +97,8 @@ const MainSection = () => {
               <div className="  absolute -right-40 -top-8 hidden md:block ">
                 <img src={CatLegs} alt="" />
               </div>
-              <div className="  justify-start  absolute mt-20 -right-60 hidden md:block  ">
-                <img src={Graph} alt="" />
+              <div className="  justify-start  absolute mt-20 md:-right-60 -right-10      md:block md:w-auto  w-5/6       ">
+                <img src={Graph} alt="" className="  relative" />
               </div>
               <img src={YellowRec} className="   " alt="" />
             </div>
