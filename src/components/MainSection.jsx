@@ -94,10 +94,10 @@ const MainSection = () => {
                 alt=""
               />
 
-              <div className="  absolute -right-40 -top-8 ">
+              <div className="  absolute -right-40 -top-8 hidden md:block ">
                 <img src={CatLegs} alt="" />
               </div>
-              <div className="flex justify-start  absolute mt-20 -right-60  ">
+              <div className="  justify-start  absolute mt-20 -right-60 hidden md:block  ">
                 <img src={Graph} alt="" />
               </div>
               <img src={YellowRec} className="   " alt="" />
@@ -185,150 +185,152 @@ const MainSection = () => {
       </section>
       {/* 3rd section */}
       <section>
-        <div className="flex flex-col bg-white justify-center items-center mt-20 ">
-          <div className="">
-            <h1 className=" text-[30px] lg:text-[50px] font-bold  ">
-              Trending Courses
-            </h1>
-          </div>
+        <div>
+          <div className="flex flex-col bg-white justify-center items-center mt-20 ">
+            <div className="">
+              <h1 className=" text-[30px] lg:text-[50px] font-bold  ">
+                Trending Courses
+              </h1>
+            </div>
 
-          <p className="mx-80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perferendis, quod voluptatibus? Ut eos earum accusantium ducimus
-          </p>
+            <p className="mx-80">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, quod voluptatibus? Ut eos earum accusantium ducimus
+            </p>
 
-          <div className="flex flex-col  lg:flex-row justify-evenly items-center gap-10 mt-10   ">
-            {/* 1st crd */}
-            <div className="flex flex-col gap-5 ">
-              <img src={Rectangle1} alt="" />
-              <div className="flex flex-col ml-5 gap-3 ">
-                <div className="bg-bgYellow  p-1 flex w-1/3 rounded-lg justify-center items-center   ">
-                  <h1 className="text-yellow2 font-semibold text-xl font-custom  ">
-                    PROFFESSIONAL
+            <div className="flex flex-col  lg:flex-row justify-evenly items-center gap-10 mt-10   mx-5  ">
+              {/* 1st crd */}
+              <div className="flex flex-col gap-5 ">
+                <img src={Rectangle1} alt="" />
+                <div className="flex flex-col ml-5 gap-3 ">
+                  <div className="bg-bgYellow  p-1 flex w-1/3 rounded-lg justify-center items-center   ">
+                    <h1 className="text-yellow2 font-semibold text-xl font-custom  ">
+                      PROFFESSIONAL
+                    </h1>
+                  </div>
+
+                  <h1 className="text-2xl font-bold font-inter  ">
+                    Docker & Kubertes Course - <br />
+                    12 Sessions in 1
                   </h1>
-                </div>
 
-                <h1 className="text-2xl font-bold font-inter  ">
-                  Docker & Kubertes Course - <br />
-                  12 Sessions in 1
-                </h1>
-
-                <div className="flex gap-3    ">
-                  <h1>4.5</h1>
-                  <div className="flex gap-2">
-                    <img src={Star} alt="" />
-                    <img src={Star} alt="" />
-                    <img src={Star} alt="" />
-                    <img src={Star} alt="" />
-                    <img src={Star2} alt="" />
+                  <div className="flex gap-3    ">
+                    <h1>4.5</h1>
+                    <div className="flex gap-2">
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star2} alt="" />
+                    </div>
+                    <h1> (120)</h1>
                   </div>
-                  <h1> (120)</h1>
-                </div>
-                {/* border bottom */}
-                <div className="flex border-b"></div>
+                  {/* border bottom */}
+                  <div className="flex border-b"></div>
 
-                {/* prices */}
-                <div className=" flex justify-between  ">
-                  <div className=" ">
-                    <span className="   text-green-600 text-26 font-poppins inline ">
-                      RS.1000
-                    </span>
-                    <span className="inline ml-2">/Session</span>
-                  </div>
+                  {/* prices */}
+                  <div className=" flex justify-between  ">
+                    <div className=" ">
+                      <span className="   text-green-600 text-26 font-poppins inline ">
+                        RS.1000
+                      </span>
+                      <span className="inline ml-2">/Session</span>
+                    </div>
 
-                  <div className="flex justify-between items-center gap-3 ">
-                    <img src={Session} height={18} width={17} alt="" />
-                    <span>3 Sessions</span>
+                    <div className="flex justify-between items-center gap-3 ">
+                      <img src={Session} height={18} width={17} alt="" />
+                      <span>3 Sessions</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            {/* 2nd Crd */}
-            <div className="flex flex-col gap-5">
-              <img src={Rectangle2} alt="" />
-              <div className="flex flex-col ml-5 gap-3 ">
-                <div className="bg-bgPurple  p-1 flex w-1/3 rounded-lg justify-center items-center   ">
-                  <h1 className="text-purple2 font-semibold text-xl font-custom  ">
-                    CAREER CENTRED
+              {/* 2nd Crd */}
+              <div className="flex flex-col gap-5">
+                <img src={Rectangle2} alt="" />
+                <div className="flex flex-col ml-5 gap-3 ">
+                  <div className="bg-bgPurple  p-1 flex sm:w-1/3  w-fit rounded-lg justify-center items-center   ">
+                    <h1 className="text-purple2 font-semibold text-xl font-custom  ">
+                      CAREER CENTRED
+                    </h1>
+                  </div>
+
+                  <h1 className="text-2xl font-bold font-inter  ">
+                    Full Stack DeveloperootCamp - <br />
+                    Course 24 Sessions in 1
                   </h1>
-                </div>
 
-                <h1 className="text-2xl font-bold font-inter  ">
-                  Full Stack DeveloperootCamp - <br />
-                  Course 24 Sessions in 1
-                </h1>
-
-                <div className="flex gap-3    ">
-                  <h1>4.5</h1>
-                  <div className="flex gap-2">
-                    <img src={Star} alt="" />
-                    <img src={Star} alt="" />
-                    <img src={Star} alt="" />
-                    <img src={Star} alt="" />
-                    <img src={Star2} alt="" />
+                  <div className="flex gap-3    ">
+                    <h1>4.5</h1>
+                    <div className="flex gap-2">
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star2} alt="" />
+                    </div>
+                    <h1> (120)</h1>
                   </div>
-                  <h1> (120)</h1>
-                </div>
-                {/* border bottom */}
-                <div className="flex border-b"></div>
+                  {/* border bottom */}
+                  <div className="flex border-b"></div>
 
-                {/* prices */}
-                <div className=" flex justify-between  ">
-                  <div className=" ">
-                    <span className="   text-green-600 text-26 font-poppins inline ">
-                      RS.1000
-                    </span>
-                    <span className="inline ml-2">/Session</span>
-                  </div>
+                  {/* prices */}
+                  <div className=" flex justify-between  ">
+                    <div className=" ">
+                      <span className="   text-green-600 text-26 font-poppins inline ">
+                        RS.1000
+                      </span>
+                      <span className="inline ml-2">/Session</span>
+                    </div>
 
-                  <div className="flex justify-between items-center gap-3 ">
-                    <img src={Session} height={18} width={17} alt="" />
-                    <span>6 Sessions</span>
+                    <div className="flex justify-between items-center gap-3 ">
+                      <img src={Session} height={18} width={17} alt="" />
+                      <span>6 Sessions</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* 3rd Card */}
-            <div className="flex flex-col gap-5">
-              <img src={Rectangle3} alt="" />
-              <div className="flex flex-col ml-5 gap-3 ">
-                <div className="bg-bgDarkOrange  p-1 flex w-1/3 rounded-lg justify-center items-center     ">
-                  <h1 className="text-textORange font-semibold text-xl font-custom  ">
-                    STUDENTS
+              {/* 3rd Card */}
+              <div className="flex flex-col gap-5">
+                <img src={Rectangle3} alt="" />
+                <div className="flex flex-col ml-5 gap-3 ">
+                  <div className="bg-bgDarkOrange  p-1 flex w-1/3 rounded-lg justify-center items-center     ">
+                    <h1 className="text-textORange font-semibold text-xl font-custom  ">
+                      STUDENTS
+                    </h1>
+                  </div>
+
+                  <h1 className="text-2xl font-bold font-inter mb-5  ">
+                    GCE O/L ICT COURSE - 8 Sessions in 1
                   </h1>
-                </div>
 
-                <h1 className="text-2xl font-bold font-inter mb-5  ">
-                  GCE O/L ICT COURSE - 8 Sessions in 1
-                </h1>
-
-                <div className="flex gap-3    ">
-                  <h1>4.5</h1>
-                  <div className="flex gap-2">
-                    <img src={Star} alt="" />
-                    <img src={Star} alt="" />
-                    <img src={Star} alt="" />
-                    <img src={Star} alt="" />
-                    <img src={Star2} alt="" />
+                  <div className="flex gap-3    ">
+                    <h1>4.5</h1>
+                    <div className="flex gap-2">
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star} alt="" />
+                      <img src={Star2} alt="" />
+                    </div>
+                    <h1> (120)</h1>
                   </div>
-                  <h1> (120)</h1>
-                </div>
-                {/* border bottom */}
-                <div className="flex border-b"></div>
+                  {/* border bottom */}
+                  <div className="flex border-b"></div>
 
-                {/* prices */}
-                <div className=" flex justify-between  ">
-                  <div className=" ">
-                    <span className="   text-green-600 text-26 font-poppins inline ">
-                      RS.1000
-                    </span>
-                    <span className="inline ml-2">/Session</span>
-                  </div>
+                  {/* prices */}
+                  <div className=" flex justify-between  ">
+                    <div className=" ">
+                      <span className="   text-green-600 text-26 font-poppins inline ">
+                        RS.1000
+                      </span>
+                      <span className="inline ml-2">/Session</span>
+                    </div>
 
-                  <div className="flex justify-between items-center gap-3 ">
-                    <img src={Session} height={18} width={17} alt="" />
-                    <span>9 Sessions</span>
+                    <div className="flex justify-between items-center gap-3 ">
+                      <img src={Session} height={18} width={17} alt="" />
+                      <span>9 Sessions</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -345,7 +347,7 @@ const MainSection = () => {
               <BigIcon className="  absolute -bottom-12 left-9" />
             </div>
             <div className="flex flex-col       ">
-              <h1 className="mt-20 text-[40px]  lg:text-[50px] font-bold">
+              <h1 className="mt-0 sm:mt-20 text-[40px]  lg:text-[50px] font-bold">
                 {' '}
                 For Professionals
               </h1>
@@ -358,7 +360,7 @@ const MainSection = () => {
                 reprehenderit laudantium, a rerum ad aut velit sit?
               </p>
               <div className="mt-10  ">
-                <button class="bg-buttonColour1  h-[56px]  text-white   p-2  text-16 font-inter px-6  rounded">
+                <button class="bg-buttonColour1  mb-10    text-white   p-2  text-16 font-inter  px-6 py-3 rounded">
                   View Courses
                 </button>
               </div>
@@ -383,7 +385,9 @@ const MainSection = () => {
                     </h1>
 
                     <div className="flex gap-3    ">
-                      <h1>4.5</h1>
+                      <h1 className="text-[#000000] font-[Lato] text-14   font-normal ">
+                        4.5
+                      </h1>
                       <div className="flex gap-2">
                         <img src={Star} alt="" />
                         <img src={Star} alt="" />
@@ -391,7 +395,10 @@ const MainSection = () => {
                         <img src={Star} alt="" />
                         <img src={Star2} alt="" />
                       </div>
-                      <h1> (120)</h1>
+                      <h1 className=" font-[Lato] text-14 text-[#747579] font-normal">
+                        {' '}
+                        (120)
+                      </h1>
                     </div>
                     {/* border bottom */}
                     <div className="flex border-b"></div>
@@ -400,7 +407,9 @@ const MainSection = () => {
                     <div className=" flex justify-end  ">
                       <div className="flex    gap-3 ">
                         <img src={Session} height={18} width={17} alt="" />
-                        <span>13 Sessions</span>
+                        <span className="text-[#25292D] font-[Lato] text-[15px] font-normal">
+                          13 Sessions
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -424,7 +433,9 @@ const MainSection = () => {
                       </h1>
 
                       <div className="flex gap-3    ">
-                        <h1>4.5</h1>
+                        <h1 className="text-[#000000] font-[Lato] text-14   font-normal ">
+                          4.5
+                        </h1>
                         <div className="flex gap-2">
                           <img src={Star} alt="" />
                           <img src={Star} alt="" />
@@ -432,7 +443,10 @@ const MainSection = () => {
                           <img src={Star} alt="" />
                           <img src={Star2} alt="" />
                         </div>
-                        <h1> (120)</h1>
+                        <h1 className=" font-[Lato] text-14 text-[#747579] font-normal">
+                          {' '}
+                          (120)
+                        </h1>
                       </div>
 
                       <div className="flex border-b"></div>
@@ -440,7 +454,9 @@ const MainSection = () => {
                       <div className=" flex justify-end  ">
                         <div className="flex justify-between items-center gap-3 ">
                           <img src={Session} height={18} width={17} alt="" />
-                          <span>13 Sessions</span>
+                          <span className="text-[#25292D] font-[Lato] text-[15px] font-normal">
+                            13 Sessions
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -472,7 +488,9 @@ const MainSection = () => {
                 </h1>
 
                 <div className="flex gap-3    ">
-                  <h1>4.5</h1>
+                  <h1 className="text-[#000000] font-[Lato] text-14   font-normal ">
+                    4.5
+                  </h1>
                   <div className="flex gap-2">
                     <img src={Star} alt="" />
                     <img src={Star} alt="" />
@@ -480,7 +498,10 @@ const MainSection = () => {
                     <img src={Star} alt="" />
                     <img src={Star2} alt="" />
                   </div>
-                  <h1> (120)</h1>
+                  <h1 className=" font-[Lato] text-14 text-[#747579] font-normal">
+                    {' '}
+                    (120)
+                  </h1>
                 </div>
                 {/* border bottom */}
                 <div className="flex border-b"></div>
@@ -489,7 +510,9 @@ const MainSection = () => {
                 <div className=" flex justify-end  ">
                   <div className="flex justify-between items-center gap-3 ">
                     <img src={Session} height={18} width={17} alt="" />
-                    <span>6 Sessions</span>
+                    <span className="text-[#25292D] font-[Lato] text-[15px] font-normal">
+                      6 Sessions
+                    </span>
                   </div>
                 </div>
               </div>
@@ -499,7 +522,7 @@ const MainSection = () => {
           <div className="     relative         -top-80 -left-9 hidden lg:block  ">
             <BigIcon2 className="  absolute   top-0   " />
           </div>
-          <div className=" mt-20 lg:mt-0  ">
+          <div className=" mt-20 lg:mt-0 mx-10 sm:mx-0  ">
             <h1 className="  text-50 font-manrope font-extrabold">
               Career Centred
             </h1>
@@ -511,7 +534,7 @@ const MainSection = () => {
               fuga, a dolorum, voluptate minima eaque.
             </p>
             <div className="mt-10  ">
-              <button class="bg-buttonPurple   text-white h-[56px]   p-2  text-16 font-inter px-6  rounded">
+              <button class="bg-buttonPurple   text-white     p-2  text-16 font-inter  px-6 py-3   rounded">
                 View Courses
               </button>
             </div>
@@ -520,16 +543,15 @@ const MainSection = () => {
       </section>
       {/* 6th */}
       <section>
-        <div className=" bg-bgorange   p-2 ">
+        <div name="testimonials" className=" bg-bgorange   p-2 ">
           <div className="flex flex-col  lg:flex-row    m-20 gap-4 justify-around ">
-            {/* background svg image */}
-            <div className="  align-middle    relative   hidden lg:block     ">
-              <BigIcon3 className="  absolute -bottom-20 -left-20" />
-            </div>
             <div className="flex flex-col">
               <h1 className="mt-20  text-10xl font-bold"> For Students</h1>
               {/* <img src={BigIcon} /> */}
-
+              {/* background svg image */}
+              <div className="   relative  left-10 bottom-60   hidden lg:block     ">
+                <BigIcon3 className=" absolute    " />
+              </div>
               <p className="text-18 font-inter text-darkdray mt-10">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
                 asperiores modi <br /> beatae facere eum! Deleniti, rerum
@@ -546,11 +568,11 @@ const MainSection = () => {
 
             <div className=" flex flex-col md:flex-row justify-between  items-center    gap-6">
               {/* 1st crd  */}
-              <div className="bg-white p-2 rounded-lg mb-10 h-[458px]">
+              <div className="bg-white p-2 rounded-lg mb-10 lg:h-[458px] h-fit ">
                 <div className="flex flex-col gap-5">
                   <img src={Rectangle7} alt="" />
                   <div className="flex flex-col ml-5 gap-3 ">
-                    <div className="bg-bgYellow  p-1 flex w-1/2 rounded-lg justify-center items-center   ">
+                    <div className="bg-bgYellow  p-1 flex lg:w-1/2 w-fit rounded-lg justify-center items-center   ">
                       <h1 className="text-yellow2 font-semibold text-xl font-custom  ">
                         PROFFESSIONAL
                       </h1>
@@ -561,8 +583,11 @@ const MainSection = () => {
                       12 Sessions in 1
                     </h1>
 
-                    <div className="flex gap-3    ">
-                      <h1>4.5</h1>
+                    <div className="flex  gap-1    lg:gap-3  ">
+                      <h1 className="text-[#000000] font-[Lato] text-14   font-normal ">
+                        4.5
+                      </h1>
+
                       <div className="flex gap-2">
                         <img src={Star} alt="" />
                         <img src={Star} alt="" />
@@ -570,16 +595,21 @@ const MainSection = () => {
                         <img src={Star} alt="" />
                         <img src={Star2} alt="" />
                       </div>
-                      <h1> (120)</h1>
+                      <h1 className=" font-[Lato] text-14 text-[#747579] font-normal">
+                        {' '}
+                        (120)
+                      </h1>
                     </div>
                     {/* border bottom */}
                     <div className="flex border-b"></div>
 
                     {/* prices */}
                     <div className=" flex justify-end  ">
-                      <div className="flex    gap-3 ">
+                      <div className="flex  gap-3 ">
                         <img src={Session} height={18} width={17} alt="" />
-                        <span>13 Sessions</span>
+                        <span className="text-[#25292D] font-[Lato] text-[15px] font-normal">
+                          13 Sessions
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -588,10 +618,10 @@ const MainSection = () => {
               {/* 2nd crd */}
               <div className=" mt-0    lg:mt-10 ">
                 <div className="flex flex-col gap-5  ">
-                  <div className="bg-white p-2 rounded-lg h-[458px]">
+                  <div className="bg-white p-2 rounded-lg  lg:h-[458px] h-fit">
                     <img src={Rectangle8} alt="" />
                     <div className="flex flex-col ml-5 gap-3 ">
-                      <div className="bg-bgYellow  p-1 flex w-1/2 rounded-lg justify-center items-center mt-2   ">
+                      <div className="bg-bgYellow  p-1 flex  lg:w-1/2 w-fit rounded-lg justify-center items-center mt-2   ">
                         <h1 className="text-yellow2 font-semibold text-xl font-custom  ">
                           PROFFESSIONAL
                         </h1>
@@ -602,8 +632,10 @@ const MainSection = () => {
                         12 Sessions in 1
                       </h1>
 
-                      <div className="flex gap-3    ">
-                        <h1>4.5</h1>
+                      <div className="flex lg:gap-3   gap-1  ">
+                        <h1 className="text-[#000000] font-[Lato] text-14   font-normal ">
+                          4.5
+                        </h1>
                         <div className="flex gap-2">
                           <img src={Star} alt="" />
                           <img src={Star} alt="" />
@@ -611,7 +643,10 @@ const MainSection = () => {
                           <img src={Star} alt="" />
                           <img src={Star2} alt="" />
                         </div>
-                        <h1> (120)</h1>
+                        <h1 className=" font-[Lato] text-14 text-[#747579] font-normal">
+                          {' '}
+                          (120)
+                        </h1>
                       </div>
                       {/* border bottom */}
                       <div className="flex border-b"></div>
@@ -625,7 +660,9 @@ const MainSection = () => {
                             height={18}
                             width={17}
                           />
-                          <span>13 Sessions</span>
+                          <span className="text-[#25292D] font-[Lato] text-[15px] font-normal">
+                            13 Sessions
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -647,7 +684,7 @@ const MainSection = () => {
             </div>
 
             <div className="flex flex-col">
-              <div className="relative   ">
+              <div className="relative hidden lg:block   ">
                 <img
                   src={Star22}
                   className="  absolute  left-80 top-0"
